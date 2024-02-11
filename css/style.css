@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Cairo', sans-serif;
+
+}
+*::selection {
+	background-color: #000;
+	color: yellow;
+}
+
+.header{
+	height: 100vh;
+	background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../photo/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 170vh;
+}
+.nav{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: transparent;
+	padding: 0 8px;
+	height: 160px;
+
+}
+.logo img {
+	width: 150px;
+}
+
+
+.h-l {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+.h-l a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #fff;
+	background-color: transparent;
+	padding: 8px 16px;
+	transition: 0.5s ease;
+}
+.h-l a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.active {
+	background: #fff;
+	color: #000;
+
+}
+.sub-menu {
+	display: none;
+	list-style: none;
+	position: absolute;
+	top: 14%;
+	margin-top: 7px;
+	transition: 0.4s ease;
+
+}
+.sub-menu li {
+	margin-bottom: 15px;
+}
+
+.h-l li:hover .sub-menu {
+	display: block;
+}
+.h-l li:active .sub-menu {
+	display: block;
+}
+
+
+
+
+
+
+
+.container {
+	color: #fff;
+	margin-top: 8%;
+	width: 100%;
+	text-align: center;
+}
+
+
+.container .heading {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 80px;
+	letter-spacing: 2px;
+}
+
+.container .cn {
+	width: 170px;
+	height: 40px;
+	background: transparent;
+	border: 1px #fff solid;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	transition: 0.5s ease;
+}
+
+.container .cn:hover {
+	background: #fff;
+	color: black;
+
+}
+
+.form {
+	width: 250px;
+	height: 400px;
+	background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+	margin-top: 120px;
+	padding:25px;
+	border-top-left-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	
+	
+}
+.form h2 {
+	width: 220px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #000;
+	font-size: 22px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+.form input {
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+	outline: none;
+}
+::placeholder {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btnn {
+	width: 240px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.4s ease;
+	color: #fff;
+}
+.btnn:hover {
+	background-color: #fff;
+}
+.btnn:hover a {
+	color: #000;
+}
+.btnn a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	transition: 0.5s ease;
+	background: transparent;
+
+
+}
+.btnn a:hover {
+	color: #000	;
+}
+.form .link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	padding-top: 20px;
+	text-align: center;
+	color: #fff;
+}
+.form .link a{
+	text-decoration: none;
+	color: #fff;
+
+}
+.liw {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #fff;
+
+}
+.icons a {
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	left: 37%;
+}
+.icons ion-icon{
+	color: #fff;
+	font-size: 30px;
+	padding-left: 14px;
+	padding-top: 5px;
+	transition: 0.4s ease;
+}
+.icons ion-icon:hover {
+	color: #000;
+}
+ion-icon {
+	position: relative;
+	top: 3.8px;
+}
+.video {
+	position: absolute;
+	left: 31.3%;
+	bottom: -65%;
+	border-radius: 10px;
+	width: 44.380%;
+	height: 50%;
+}
+.map {
+	position: absolute;
+	bottom: -65%;
+	height: 50%;
+	border-radius: 10px;
+	width: 31.290%;
+}
+
